@@ -1,3 +1,10 @@
+#
+>[!TIP]
+> J'ai crée le dossier dist avec la commande npm run build
+
+
+
+
 # automatisation-page
 
 This template should help get you started developing with Vue 3 in Vite.
