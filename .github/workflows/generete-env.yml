@@ -1,0 +1,21 @@
+name: Generate .env file
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  generate-env:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: creation .env file
+        run: |
+          echo "VITE_APP_NAME=${{ env.VITE_APP_NAME }}" >> .env
+
+        with:
+          name: env-file
+          path: .env
